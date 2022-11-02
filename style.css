@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: 400 46px "Quicksand", sans-serif;
+    color:#fff;
+    text-align:center;
+}
+
+
+html {
+	background: #229ad7;
+    background-image: linear-gradient(to bottom, rgba(34,156,219,1) 0%, rgba(10,114,187,1) 100%);
+    background-attachment: fixed;
+}
+
+
+#calculator {
+	width: 325px;
+	height: auto;
+	margin: 100px auto;
+	padding: 20px 20px 9px;
+	
+	border-radius: 5px;
+}
+
+.top  span.clear{
+	float: left;
+}
+
+
+.top .screen {
+    height:90px;
+	width: 100%;
+	padding: 0 10px;
+	background: rgba(154, 185, 188, 0.8);
+	border-radius: 5px;
+    margin-bottom:10px;
+	font-size: 30px;
+	line-height: 90px;
+	color: white;
+	text-align: right;
+    overflow:auto;
+}
+
+.keys  {
+    overflow: hidden;
+}
+
+
+.keys span, .top span.clear {
+	float: left;
+	position: relative;
+	top: 0;
+	background: #523d98;
+	font-size:27px;
+	cursor: pointer;
+	width: 66px;
+	height: 46px;
+	border-radius: 5px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	margin: 0 7px 11px 0;
+	color: #f1c851;
+	line-height: 46px;
+	text-align: center;
+	user-select: none;
+    outline: 0 solid;
+	transition: all 0.2s ease;
+}
+
+.keys span.operator {
+	background: #536ea5;
+	margin-right: 0;
+}
+
+.keys span.operator sup {
+    font-size: 50%;
+    vertical-align: top;
+    color:#f1c851;
+}
+
+.keys span.eval {
+	background: #d6643f;
+	box-shadow: 0px 4px #c3502b;
+	color: #f1c851;
+    width: 212px;
+}
+
+span.clear {
+	background: #523d98;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.keys span:hover {
+	background: #795ebd;
+	color: white;
+}
+
+.keys span.eval:hover {
+	background: #f37c4c;
+	box-shadow: 0px 4px #d65f3d;
+	color: #ffffff;
+}
+
+.keys span.operator:hover {
+	background: #5d7bba;
+	color: #ffffff;
+}
+
+.top span.clear:hover {
+	background: #f68991;
+	box-shadow: 0px 4px #d3545d;
+	color: white;
+}
+
+
+.keys span:active {
+	box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+
+.keys span.eval:active {
+	box-shadow: 0px 0px #717a33;
+	top: 4px;
+}
+
+.top span.clear:active {
+	top: 4px;
+	box-shadow: 0px 0px #d3545d;
+}
